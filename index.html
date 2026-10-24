@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="todo-app">
+            <div class="app-header">
+                <h2>Task Manager <i class="fas fa-check-double"></i></h2>
+                <span id="task-counter">0 Tasks</span>
+            </div>
+            
+            <!-- Input Area -->
+            <div class="row">
+                <input type="text" id="input-box" placeholder="What needs to be done?">
+                <button onclick="addTask()"><i class="fas fa-plus"></i> Add</button>
+            </div>
+
+            <!-- Task List Container -->
+            <ul id="list-container">
+                <!-- Tasks will be added dynamically -->
+            </ul>
+
+            <!-- Footer Controls -->
+            <div class="app-footer" id="footer-section" style="display: none;">
+                <button class="clear-btn" onclick="clearAllTasks()">Clear All Tasks</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>S
